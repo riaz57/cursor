@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!--=======  font awesome css  ===========-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!--=======  slick slider  ===========-->
+	<!--=======  slick slider css  ===========-->
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<!--=======  owl slider  ===========-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!--=======  custom css  ===========-->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -83,6 +86,97 @@
 				</ol>
 			</nav>
 		</div>
+
+		<!--============================================
+						brand categories
+		==============================================-->
+		<div class="container">
+			<div class="row">
+				<div class="categories margin_bottom_20 margin_top_20">
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/1.png"class="img-fluid" alt="">
+								</div>
+								<span>Groceries</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/2.png"class="img-fluid" alt="">
+								</div>
+								<span>Stationaries</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/3.png"class="img-fluid" alt="">
+								</div>
+								<span>Healthcare</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/4.png"class="img-fluid" alt="">
+								</div>
+								<span>Elctronics</span>
+							</a>	
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/5.png"class="img-fluid" alt="">
+								</div>
+								<span>Beauty Products</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/6.png"class="img-fluid" alt="">
+								</div>
+								<span>Home Decor</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/7.png"class="img-fluid" alt="">
+								</div>
+								<span>Man's Fasion</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="category_box">
+							<a href="#">
+								<div class="image">
+									<img src="assets/img/category/8.png"class="img-fluid" alt="">
+								</div>
+								<span>Women's Fashion</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
 		<!--============================================
 						tabs
 		==============================================-->
@@ -97,8 +191,26 @@
 				</nav>
 				<div class="tab-content" id="products">
 					<div class="tab-pane fade show active" id="product_list">
-						<div class="row justify-content-end">
-							<div class="col-md-5">
+						<div class="row justify-content-between">
+							<div class="col-md-8 margin_top_20">
+								<div class="product_sort d-inline-flex align-items-center btn-group" role="group">
+									<span class="me-3">Sort By</span>
+								  <button type="button" class="btn btn-light active">Best Match</button>
+								  <button type="button" class="btn btn-light">Orders</button>
+								  <button type="button" class="btn btn-light">Newest</button>
+
+								  <div class="btn-group" role="group">
+								    <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								      Price
+								    </button>
+								    <ul class="dropdown-menu">
+								      <li><a class="dropdown-item" href="#">low to hight</a></li>
+								      <li><a class="dropdown-item" href="#">hight to low</a></li>
+								    </ul>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-4">
 								<div class="search_bar margin_top_20">
 									<input type="text" class="form-control rounded-0" placeholder="search for">
 									<span class="search_icon"><i class="fas fa-search"></i></span>
@@ -871,6 +983,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js" integrity="sha512-ijLvQMMXgWAO85zfDbKeoqNR7015wrZI42XGYorITKkG0sVlP4t+Rt5Dl9EKDkrPxGrWZmVCUW5oIXkVOrnCiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!--=======  bootstrap js  ===========-->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--=======  slick slider js  ===========-->
+	<script src="assets/js/slick.min.js"></script>
 	<!--=======  owl carousel js  ===========-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!--=======  custom js  ===========-->

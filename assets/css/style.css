@@ -42,6 +42,9 @@ h3 {
 h4 {
 	font-size: 22px;
 }
+h5 {
+	font-size: 18px;
+}
 .card {
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.17);
 	padding: 8px;
@@ -60,8 +63,8 @@ a:hover {
 	color: var(--text-color);
 }
 ul {
-	padding: 0;
-	margin: 0;
+	padding: 0!important;
+	margin: 0!important;
 }
 li {
 	list-style-type: none;
@@ -205,6 +208,51 @@ nav.breadcrumb {
 	padding-left: 10px;
 }
 
+/*====================================
+			Brand Product Categories
+======================================*/
+
+.category_box {
+	display: block;
+	margin: 0 6px;
+	border-radius: 10px;
+	background: var(--light-color);
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+.category_box .image {
+	height: 125px;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 7px;
+}
+.category_box .image img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.category_box span {
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	color: var(--light-color);
+	background: var(--primary-color);
+	padding: 5px 0;
+	border-radius: 0 0 10px 10px;
+}
+/* .slick-arrow {
+	top: 100%;
+	transform: translate(0, 100%);
+	background: var(--primary-color);
+}
+.slick-prev {
+	left: 50%;
+}
+.slick-next {
+	right: 50%;
+} */
+
 
 /*====================================
 			Product List
@@ -230,7 +278,7 @@ nav.breadcrumb {
 }
 .single_product .product_image img {
 	width: 100%;
-	height: 170px;
+	height: 220px;
 	object-fit: cover;
 }
 .product_intro {
@@ -282,6 +330,7 @@ a.buy_now {
 	align-items: center;	
 	justify-content: center;
 	padding: 8px 0;
+	border-radius: 12px 12px 0 0;
 	border-top: 1px solid #ddd;
 	transition: 0.3s ease all;
 	-webkit-transition: 0.3s ease all;
@@ -308,6 +357,20 @@ a.buy_now span {
 .search_icon i {
 	color: var(--light-color);
 	padding: 10px 8px;
+}
+.product_sort button, .product_sort a {
+	padding: 3px 10px!important;
+	color: var(--text-color);
+	background: var(--offwhite-color);
+	font-size: 14px;
+}
+.product_sort button:hover, .product_sort a:hover {
+	color: var(--primary-color);
+}
+.product_sort button.active {
+	background: var(--primary-color);
+	color: var(--light-color);
+	font-weight: 600;
 }
 
 /*====================================
