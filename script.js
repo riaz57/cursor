@@ -20,10 +20,10 @@ const convert = (date)=> {
         .join(''));
 
     const bnYear = (EnDay, zeroRemover, EnYear)=> {
-        if(EnDay >= 14 && zeroRemover >=4) {
-            return EnYear = EnYear - 593;
-        } else {
+        if(EnDay <= 13 && zeroRemover <=4) {
             return EnYear = EnYear - 594;
+        } else {
+            return EnYear = EnYear - 593;
         }
     }
 
